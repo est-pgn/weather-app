@@ -19,7 +19,7 @@ searchInput.addEventListener('keypress', function(event) {
 function api(){
     const APIKey = "5c3d18b4f38b4c52bd7154613252203";
     const city = document.querySelector('.searchbox input').value;
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=${APIKey}&q=${city}`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=${APIKey}&q=${city}`)
     .then(res => res.json())
     .then(data => {
         const img = document.querySelector('.weatherbox img');
